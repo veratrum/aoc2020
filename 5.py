@@ -1,7 +1,6 @@
+from aoc import aopen
 
-
-
-with open('input\\5.txt', 'r') as f:
+with aopen(5) as f:
     positions = f.readlines()
 
 twos = [2 ** i for i in range(7)]

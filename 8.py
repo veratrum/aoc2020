@@ -1,6 +1,7 @@
+from aoc import aopen
 import re
 
-with open('input\\8.txt', 'r') as f:
+with aopen(8) as f:
     p = re.compile(r'(\w+) ([+-])(\d+)')
     lines = []
     for line in f.readlines():

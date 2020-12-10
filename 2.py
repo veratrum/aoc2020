@@ -1,6 +1,7 @@
+from aoc import aopen
 import re
 
-with open('input\\2.txt', 'r') as f:
+with aopen(2) as f:
     strings = list(f.readlines())
 
 total = 0

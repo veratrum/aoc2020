@@ -1,7 +1,7 @@
-
+from aoc import aopen
 import re
 
-with open('input\\7.txt', 'r') as f:
+with aopen(7) as f:
     lines = f.readlines()
 
 bags = []

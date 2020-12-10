@@ -1,5 +1,6 @@
+from aoc import aopen
 
-with open('input\\9.txt', 'r') as f:
+with aopen(9) as f:
     values = [int(x) for x in f.readlines()]
 
 n = 25

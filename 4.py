@@ -1,6 +1,7 @@
+from aoc import aopen
 import re
 
-with open('input\\4.txt', 'r') as f:
+with aopen(4) as f:
     passports = f.read().split('\n\n')
 
 fields = ['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']

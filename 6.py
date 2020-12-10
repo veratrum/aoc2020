@@ -1,7 +1,7 @@
-
+from aoc import aopen
 import re
 
-with open('input\\6.txt', 'r') as f:
+with aopen(6) as f:
     groups = [x.split('\n') for x in f.read().split('\n\n')]
 
 total = 0

@@ -1,5 +1,6 @@
+from aoc import aopen
 
-with open('input\\1.txt', 'r') as f:
+with aopen(1) as f:
     values = [int(x) for x in f.readlines()]
 
 valuesReverse = set()

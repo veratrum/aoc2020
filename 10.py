@@ -1,6 +1,7 @@
+from aoc import aopen
 from functools import cache
 
-with open('input\\10.txt', 'r') as f:
+with aopen(10) as f:
     values = sorted([int(x) for x in f.readlines()])
 
 x = 0

@@ -1,5 +1,6 @@
+from aoc import aopen
 
-with open('input\\3.txt', 'r') as f:
+with aopen(3) as f:
     trees = [[c == '#' for c in x] for x in f.readlines()]
 
 y = 0
