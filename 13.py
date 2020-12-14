@@ -27,18 +27,15 @@ def part2():
             values.append((bus, i))
     values = sorted(values)
 
-    b = 1
-    step = 1
-    firstValue, firstValueOffset = values[-1]
-    values = values[:-1]
+    b = step = value = offset = 1
     for p, c in values:
         for a in range(b, 100000000000000000000, step):
-            x = firstValue * a - firstValueOffset + c
+            x = value * a - offset + c
             if x % p == 0:
                 b = a
                 break
         step *= p
-    x = firstValue * b - firstValueOffset
+    x = value * b - offset
     print(x)
 
 part1()
